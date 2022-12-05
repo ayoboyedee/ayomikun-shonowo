@@ -1,0 +1,320 @@
+a.nav-link
+{
+    font-weight: 600!important;
+    font-size: 30px!important;
+    padding: 0px;
+    padding-top: 8px;
+    color: white;
+}
+a.nav-link:hover
+{
+    color: beige;
+}
+@media (min-width: 767px) {
+    a.nav-link
+{
+    font-size: 22px!important;
+}
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+}
+a.navbar-brand.text
+{
+    top: 20px;
+    position: relative;
+}
+div.navbar-brand-text{
+    padding: 25px;
+    margin-top: 0;
+    padding-top: 0px;
+    padding-bottom: 0;
+    background-color: rgba(138, 115, 11, 0.397);
+    margin-left: 5%;
+    position: fixed;
+    z-index: 5; 
+    top: 0;
+}
+img.img-top
+{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.container-hamburger
+{
+    display: inline-block;
+    cursor: pointer;
+}
+.navbar-toggler:focus, .navbar-toggler.collapsed:focus
+{
+    border: 0px!important;
+    outline: 0px!important;
+}
+p.brand{
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 999999999;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+.fa-brands
+{
+    font-size: 30px;
+    margin-left: 10px;
+    color: rgb(20, 20, 20);
+}
+.sub-menu-1
+{
+    display: none;
+}
+.navbar-nav li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: white;
+    opacity: .7;
+    margin-left: -15px;
+}
+.navbar-nav li:hover .sub-menu-1 ul{
+    display: block;
+    padding: 0px;
+    margin: 10px;
+}
+.navbar-nav li:hover .sub-menu-1 ul li 
+{
+    width: 120px;
+    padding: 10px;
+    border-bottom: 2px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    list-style: none;
+    text-align: center;
+}
+.navbar-nav li:hover .sub-menu-1 ul li:last-child 
+{
+    border-bottom: none;
+}
+.navbar-nav li:hover .sub-menu-1 ul li a:hover, .navbar-nav li:hover .sub-menu-1 ul li a.active
+{
+    color: #919191;
+}
+.navbar-nav li:hover .sub-menu-1 ul li a
+{
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+    font-weight: 700;
+}
+.active1 {
+    background-color: rgb(190, 190, 190)!important;
+    color: #222!important;
+}
+.dropdown-container {
+    display: none;
+    background-color: black;
+    opacity: 80%;
+    padding-left: 8px;
+}
+.dropdown-btn, .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #333;
+    display: block;
+    border: none;
+    background: none;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown-btn
+{
+    width: 100%;
+}
+.dropdown-btn:hover
+{
+    color: #f1f1f1;
+}  
+@media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+.fa-brands
+{
+    font-size: 30px;
+    margin-left: 10px;
+    color: rgb(20, 20, 20);
+}
+.img-1,  .img-2, .img-3
+{
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    min-height: 95vh;
+    position: relative;
+    display: grid;
+}
+.img-1::after, .img-2::after, .img-3::after
+{
+    content: "";
+  clear: both;
+  display: table;
+}
+@media (max-width: 767px)
+{
+    .img-1, .img-2, .img-3
+    {
+        min-height: 100vh;
+    }
+}    
+.img-1
+{
+    background-image: url("image (3).jpg");
+    justify-content: unset;
+    justify-items: unset;
+    color: white;
+}
+.img-2
+{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url("image (2).jpg");
+}
+.img-3
+{
+    background-image: url("image (1).jpg");
+}
+.pl-5
+{
+    padding-left: 10%;
+}
+.card-img-top
+{
+    min-height: 70vh;
+    height: 100%;
+}
+.card-link-container
+{
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    padding: 0;
+    margin-top: auto;
+}
+.card
+{
+    margin: 0px 10px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.card-body
+{
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: min-content;
+    padding-bottom: 0px;
+}
+.card-body a 
+{
+    font-size: 1rem!important;
+    padding-left: 0!important;
+    color: grey!important;
+    opacity: 80%;
+    text-align: left!important;
+}
+.card-title
+{
+    font-size: 1.2rem;
+    position: relative;
+}
+#footer
+{
+    background-color:   #222;
+}
+.footer
+{
+    padding: 50px 50px;
+}
+.t-left
+{
+    text-align: left;
+}
+@media (max-width:575px)
+{
+    .t-left
+{
+    text-align: center;
+}
+}
+.t-right
+{
+    text-align: end;
+}
+@media (max-width:575px)
+{
+    .t-right
+{
+    text-align: center;
+}
+}
+.footer-last
+{
+    font-weight: 300;
+    color: white;
+    font-size: 1.3rem;
+}
