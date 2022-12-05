@@ -1,0 +1,116 @@
+a.nav-link
+{
+    font-weight: 600!important;
+    font-size: 22px!important;
+}
+
+a.nav-link.active
+{
+    font-size: 24px!important;
+    color: rgb(226, 226, 226)!important;    
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+}
+a.navbar-brand.text
+{
+    top: 20px;
+    position: relative;
+}
+div.navbar-brand-text{
+    padding: 25px;
+    margin-top: 0;
+    padding-top: 0px;
+    padding-bottom: 0;
+    background-color: rgba(138, 115, 11, 0.397);
+    margin-left: 5%;
+    position: absolute;
+    top: 0;
+}
+div.container-img
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 5s;
+    animation-name: animate;
+    animation-duration:  10s; 
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards; 
+    animation-timing-function:  ease-in-out;
+    animation-direction:  alternate-reverse;
+    animation-play-state: running;
+}
+@keyframes animate
+{
+    0%{
+        background-image: url(images.jpeg);
+    }
+    15%{
+        background-image: url(images.jpeg);
+    }
+    50%{
+        background-image: #fff;   
+    }
+    95%{
+     
+        background-image: url(images1.jpeg);
+     }
+    100%{
+     
+       background-image: url(images1.jpeg);
+    }
+}
+.container-hamburger
+{
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.bar1, .bar2, .bar3
+{
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.change .bar1 
+{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 
+{
+    opacity: 0;
+}
+  
+.change .bar3 
+{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.navbar-toggler:focus, .navbar-toggler.collapsed:focus
+{
+    border: 0px!important;
+    outline: 0px!important;
+}
+p.brand{
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+a.nav-link
+{
+    color: #fff!important;
+}
