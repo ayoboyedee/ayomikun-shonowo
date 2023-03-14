@@ -7,6 +7,19 @@ ul, li
 {
     list-style-type: none;
 }
+.meet
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width:576px)
+{
+    .meet
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
 a.nav-link
 {
     font-size: 20px!important;
