@@ -13,7 +13,7 @@
     <link rel="stylesheet" id="roboto-subset.css-css" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5" type="text/css" media="all">
     <title>Ayomikun Shonowo's Website</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#NavbarObject" data-offset="100">
   <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
     <i class="fas fa-arrow-up"></i>
   </button>
@@ -221,7 +221,7 @@
     </div>
     </section>
 </body>
-<script type="text/javascript" src="bootstrap.bundle.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://demos.flesler.com/jquery/scrollTo/js/jquery.scrollTo-min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
@@ -310,11 +310,5 @@ function backToTop() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
-
-var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-  target: '#NavbarObject'
-})
-
 </script>
-    
 </html>
