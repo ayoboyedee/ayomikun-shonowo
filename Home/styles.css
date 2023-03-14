@@ -3,6 +3,10 @@ body
     overflow-x: hidden;
     position: relative;
 }
+ul, li
+{
+    list-style-type: none;
+}
 a.nav-link
 {
     font-size: 20px!important;
